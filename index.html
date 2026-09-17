@@ -1,132 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Influencer Products</title>
 
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body class="bg-white text-gray-900">
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="w-full bg-white">
+      <!-- Navbar -->
 
-  <!-- Header -->
-  <header class="w-full bg-white">
-    <!-- Navbar -->
-
-    <nav class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5">
-
+      <nav
+        class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5"
+      >
         <!-- Mobile Menu Icon -->
-        <button
-            type="button"
-            class="text-xl md:hidden"
-            aria-label="Open menu">
-            ☰
+        <button type="button" class="text-xl md:hidden" aria-label="Open menu">
+          ☰
         </button>
-
 
         <!-- Logo / Brand -->
         <a href="#" class="text-base font-bold text-gray-800">
-            Influencer products
+          Influencer products
         </a>
-
 
         <!-- Desktop Navigation -->
         <div class="hidden items-center gap-7 md:flex">
+          <a
+            href="#hero"
+            class="text-xs font-medium text-gray-700 transition hover:text-pink-500"
+          >
+            Home
+          </a>
 
-            <a href="#hero"
-                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
-                Home
-            </a>
+          <a
+            href="#popular-collection"
+            class="text-xs font-medium text-gray-700 transition hover:text-pink-500"
+          >
+            Products
+          </a>
 
-            <a href="#popular-collection"
-                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
-                Products
-            </a>
+          <a
+            href="#"
+            class="text-xs font-medium text-gray-700 transition hover:text-pink-500"
+          >
+            Sign up
+          </a>
 
-            <a href="#"
-                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
-                Sign up
-            </a>
+          <a
+            href="#"
+            class="text-xs font-medium text-gray-700 transition hover:text-pink-500"
+          >
+            Log In
+          </a>
 
-            <a href="#"
-                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
-                Log In
-            </a>
+          <!-- Search -->
+          <button type="button" class="text-gray-700" aria-label="Search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.8"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-4.35-4.35m1.35-5.4a6.75 6.75 0 1 1-13.5 0 6.75 6.75 0 0 1 13.5 0Z"
+              />
+            </svg>
+          </button>
 
-            <!-- Search -->
-            <button
-                type="button"
-                class="text-gray-700"
-                aria-label="Search">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="h-4 w-4">
-
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m21 21-4.35-4.35m1.35-5.4a6.75 6.75 0 1 1-13.5 0 6.75 6.75 0 0 1 13.5 0Z" />
-
-                </svg>
-            </button>
-
-            <!-- Cart -->
-            <button
-                type="button"
-                class="text-gray-700"
-                aria-label="Shopping cart">
-
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="h-4 w-4">
-
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008" />
-
-                </svg>
-            </button>
-
+          <!-- Cart -->
+          <button
+            type="button"
+            class="text-gray-700"
+            aria-label="Shopping cart"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.8"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008"
+              />
+            </svg>
+          </button>
         </div>
 
-
         <!-- Mobile Cart -->
-        <button
-            type="button"
-            class="md:hidden"
-            aria-label="Shopping cart">
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.8"
-                stroke="currentColor"
-                class="h-5 w-5">
-
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008" />
-
-            </svg>
-
+        <button type="button" class="md:hidden" aria-label="Shopping cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.8"
+            stroke="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008"
+            />
+          </svg>
         </button>
+      </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="px-5 py-12 sm:px-8 md:py-16 lg:px-10 lg:py-20">
+        <div
+          class="mx-auto flex max-w-6xl flex-col-reverse items-center gap-10 md:flex-row md:justify-between"
+        >
+          <!-- Hero Text -->
+          <div class="w-full text-center md:w-1/2 md:text-left">
+            <h1
+              class="text-4xl font-bold leading-tight text-gray-800 sm:text-5xl lg:text-6xl"
+            >
+              Start your Journey as
+              <br />
+              Influencer
+            </h1>
 
-    </nav>
+            <p
+              class="mx-auto mt-5 max-w-md text-sm leading-6 text-gray-600 md:mx-0"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              vestibulum sed scelerisque eros. Locus faucibus.
+            </p>
 
-</header>
-</body>
+            <!-- Prebook Button -->
+            <a
+              href="#products"
+              class="mt-6 inline-flex h-[44px] w-[196px] items-center justify-center gap-3 rounded-full border border-black bg-[#E02C6D] text-[12px] font-semibold text-white shadow-[0_2px_0_rgba(0,0,0,0.25)] transition hover:bg-[#c92460] sm:text-[14px]"
+            >
+              Prebook now
+              <span class="text-[20px] leading-none"> → </span>
+            </a>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="flex w-full justify-center md:w-1/2">
+            <div
+              class="relative flex h-72 w-72 items-center justify-center rounded-full border border-pink-100 sm:h-80 sm:w-80"
+            >
+              <!-- Inner Circle -->
+              <div
+                class="absolute h-56 w-56 rounded-full bg-pink-50 sm:h-64 sm:w-64"
+              ></div>
+
+              <!-- Camera -->
+              <img
+                src="./images/hero-camera.png"
+                alt="Camera for influencer"
+                class="relative z-10 w-56 object-contain sm:w-64"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
