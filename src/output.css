@@ -270,17 +270,29 @@
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
+  .h-\[1px\] {
+    height: 1px;
+  }
   .h-\[44px\] {
     height: 44px;
   }
   .h-\[110px\] {
     height: 110px;
   }
+  .h-\[188px\] {
+    height: 188px;
+  }
+  .h-\[220px\] {
+    height: 220px;
+  }
   .h-\[274px\] {
     height: 274px;
   }
   .h-\[508px\] {
     height: 508px;
+  }
+  .h-\[px\] {
+    height: px;
   }
   .h-auto {
     height: auto;
@@ -722,8 +734,32 @@
     .sm\:h-80 {
       height: calc(var(--spacing) * 80);
     }
+    .sm\:h-\[1px\] {
+      height: 1px;
+    }
+    .sm\:h-\[2px\] {
+      height: 2px;
+    }
     .sm\:h-\[46px\] {
       height: 46px;
+    }
+    .sm\:h-\[150px\] {
+      height: 150px;
+    }
+    .sm\:h-\[188px\] {
+      height: 188px;
+    }
+    .sm\:h-\[200px\] {
+      height: 200px;
+    }
+    .sm\:h-\[220px\] {
+      height: 220px;
+    }
+    .sm\:h-\[274px\] {
+      height: 274px;
+    }
+    .sm\:h-\[px\] {
+      height: px;
     }
     .sm\:w-64 {
       width: calc(var(--spacing) * 64);
@@ -843,6 +879,9 @@
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
     }
     .md\:justify-between {
       justify-content: space-between;
