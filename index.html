@@ -1,19 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Influencer Gears</title>
+    <title>Influencer Products</title>
 
     <link rel="stylesheet" href="./src/output.css">
 </head>
+<body class="bg-white text-gray-900">
 
-<body>
+  <!-- Header -->
+  <header class="w-full bg-white">
+    <!-- Navbar -->
 
-    <h1 class="text-4xl font-bold text-center mt-10">
-        Influencer Gears
-    </h1>
+    <nav class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5">
 
+        <!-- Mobile Menu Icon -->
+        <button
+            type="button"
+            class="text-xl md:hidden"
+            aria-label="Open menu">
+            ☰
+        </button>
+
+
+        <!-- Logo / Brand -->
+        <a href="#" class="text-base font-bold text-gray-800">
+            Influencer products
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <div class="hidden items-center gap-7 md:flex">
+
+            <a href="#hero"
+                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
+                Home
+            </a>
+
+            <a href="#popular-collection"
+                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
+                Products
+            </a>
+
+            <a href="#"
+                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
+                Sign up
+            </a>
+
+            <a href="#"
+                class="text-xs font-medium text-gray-700 transition hover:text-pink-500">
+                Log In
+            </a>
+
+            <!-- Search -->
+            <button
+                type="button"
+                class="text-gray-700"
+                aria-label="Search">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="h-4 w-4">
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m21 21-4.35-4.35m1.35-5.4a6.75 6.75 0 1 1-13.5 0 6.75 6.75 0 0 1 13.5 0Z" />
+
+                </svg>
+            </button>
+
+            <!-- Cart -->
+            <button
+                type="button"
+                class="text-gray-700"
+                aria-label="Shopping cart">
+
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="h-4 w-4">
+
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008" />
+
+                </svg>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Cart -->
+        <button
+            type="button"
+            class="md:hidden"
+            aria-label="Shopping cart">
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="h-5 w-5">
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835L5.4 6.75m0 0h14.85l-1.5 7.5H7.05L5.4 6.75Zm1.65 7.5L6 17.25h12.75M9 20.25h.008M18 20.25h.008" />
+
+            </svg>
+
+        </button>
+
+    </nav>
+
+</header>
 </body>
 </html>
