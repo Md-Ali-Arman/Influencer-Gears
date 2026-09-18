@@ -1,4 +1,4 @@
-# Influencer Products
+# Influencer Gears
 
 A responsive product landing page built from a Figma design using HTML, CSS, and Tailwind CSS.
 
