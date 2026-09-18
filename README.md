@@ -27,8 +27,11 @@ A responsive product landing page built from a Figma design using HTML, CSS, and
 Influencer Gears/
 ├── images/
 ├── src/
-│   └── input.css
+│   ├── input.css
+│   └── output.css
 ├── index.html
-├── output.css
 ├── package.json
+├── package-lock.json
+├── .gitignore
 └── README.md
+```
